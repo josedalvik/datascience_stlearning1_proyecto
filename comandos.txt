@@ -1,0 +1,22 @@
+cd {RUTA}
+prompt proyecto#
+
+conda create -n proyecto python=3.9
+conda activate proyecto
+conda update -n base -c defaults conda
+conda install numpy==1.21.5
+conda install pandas=1.4.1
+conda install matplotlib=3.5.1
+conda install jupyter
+conda install -c conda-forge tensorflow==2.6.0
+conda install scikit-learn 
+conda install imageio 
+conda install -c conda-forge pickle-compat
+
+--
+
+jupyter notebook 
+
+--
+
+tensorboard --logdir ./logs/
